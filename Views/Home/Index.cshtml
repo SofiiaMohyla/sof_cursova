@@ -1,0 +1,813 @@
+﻿@model OrderViewModel
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <img class="col-lg-5 align-items-stretch video-box" src="~/img/about.jpg" />
+
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+                <div class="content">
+                    <h3>About <strong>Venus</strong></h3>
+                    <p>
+                        Our collection of wonderful products is suitable for absolutely everything (for hair, scalp, styling and toning, treatment). Our masters will consult and select the best means that will be best for you.
+                    </p>
+                    <p class="fst-italic">
+                        We offer you not only services inside the hair salon, but well-chosen care for home use.
+                    </p>
+                    <ul>
+                        <li><i class="bx bx-check-double"></i> High-class masters.</li>
+                        <li><i class="bx bx-check-double"></i> Painting, toning and curing is done with the highest quality materials/</li>
+                        <li>
+                            <i class="bx bx-check-double"></i> Haircuts are carried out using classic techniques that allow you
+                            to achieve perfect results.
+                        </li>
+                    </ul>
+                    <a class="btn btn-dark m-3" asp-controller="Home" asp-action="SignUp">Sign Up Now</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Why Us Section -->
+<section id="why-us" class="why-us">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Why choose <span>Our hairdresser's shop</span></h2>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="box">
+                    <span>01</span>
+                    <h4>Our Shops</h4>
+                    <p>Since opening in 2023 in Lviv City, we have grown independently and now have more than 44 shops.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="box">
+                    <span>02</span>
+                    <h4>Our Products</h4>
+                    <p> Our masters have developed their own care formula, which they return to again and again. and all hairdressing countries want our masters for master classes.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="box">
+                    <span>03</span>
+                    <h4>Our Masters</h4>
+                    <p>Our masters are graduates of foreign academies, true professionals in their field.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="menu">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Check our <span>Prices</span></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="menu-flters">
+                    <li data-filter=".filter-starters">Hair</li>
+                    <li data-filter=".filter-salads">Coloring</li>
+                    <li data-filter=".filter-specialty">Treatment</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row menu-container">
+
+            <div class="col-lg-6 menu-item filter-starters">
+                <div class="menu-content">
+                    <a href="#">Haircut </a><span>600 UAH</span>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 menu-item filter-starters">
+                <div class="menu-content">
+                    <a href="#">Mother and daughter</a><span>900 UAH</span>
+                </div>
+                <div class="menu-ingredients">
+                    Bring your daughter, and a haircut for second person will be half price!
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-starters">
+                <div class="menu-content">
+                    <a href="#">Be a model</a><span>300 UAH</span>
+                </div>
+                <div class="menu-ingredients">
+                    Pay only for materials.
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-salads">
+                <div class="menu-content">
+                    <a href="#">Coloring</a><span>2500 UAH</span>
+                </div>
+                <div class="menu-ingredients">
+                    Try new colour in yourself.
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-salads">
+                <div class="menu-content">
+                    <a href="#">Toning</a><span>1500 UAH</span>
+                </div>
+                <div class="menu-ingredients">
+                    If you are afraid of coloring, try this first!
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+                <div class="menu-content">
+                    <a href="#">Ceratin</a><span>2500 UAH</span>
+                </div>
+                <div class="menu-ingredients">
+                    Aesthetic hair.
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+                <div class="menu-content">
+                    <a href="#">Botox for hair</a><span>3000 UAH</span>
+                </div>
+                <div class="menu-ingredients">
+                    Royal hair!
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+                <div class="menu-content">
+                    <a href="#">Nanoplastics</a><span>3000 UAH</span>
+                </div>
+                <div class="menu-ingredients">
+                    The best choice for healthy looking and healthy hair!
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+                <div class="menu-content">
+                    <a href="#">Lamination</a><span>1000 UAH</span>
+                </div>
+                <div class="menu-ingredients">
+                    Trying to make yourself perfect!
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Specials Section -->
+<section id="specials" class="specials">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Types of <span>hairstyles</span></h2>
+            <p>
+                Be in trend and try:
+                pixie, bob, the military, hat, square, lysenko, ladder, torn, straight cut
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="nav nav-tabs flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Women's pixie haircut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Women's bob haircut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Women's haircut in military style</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Women's haircut cap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Women's square haircut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Women's haircut lisenka</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Women's haircut ladder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-8">Women's torn haircut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-9">Women's haircut straight cut</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="tab-1">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's pixie haircut</h3>
+                                <p>
+                                    A pixie haircut is a great solution for a contemporary woman on the go. It’s convenient, pretty and appropriate for hair
+                                    of any type. Pixie haircuts for thick hair are full of texture and manageable volume. If your hair is fine, you may also
+                                    choose the right pixie hair cut that adds dimension and boosts thickness of your short locks. Modern pixie cut styles are
+                                    not limited to modest boyish ‘dos. You may indulge in a variety of pixie hairstyles with slicked back or tousled hair, try
+                                    short pixie hairstyles for curly hair, asymmetrical vintage ‘dos or funky Faux Hawks. Short and long pixie haircuts with bangs
+                                    are the most popular short hair choice nowadays. There are cute ideas of pixies for most face shape, including cute pixie cuts
+                                    for round face. Have a look at
+                                    these trendy short pixie haircuts and pick a new hot version to refresh your stylish look this season!
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-1.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-2">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's bob haircut</h3>
+                                <p>
+                                    Medium bob hairstyles are classic and classy. They can look very different depending on
+                                    your cut and the way of styling. Wavy and straight, shaggy and sleek, asymmetrical and
+                                    symmetrical bobs offer you the modern look, diversity and convenience you want from a hairstyle.
+                                    Check our gallery of 60 mid-length bobs and pick the most appealing versions to try!
+
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-2.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-3">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's haircut in military style</h3>
+                                <p>
+                                    Serving in the Army requires a well-groomed and professional appearance. The
+                                    Army strives to be as inclusive as possible while making sure every Soldier can perform their duties as safely
+                                    as possible. Appearance regulations
+                                    are considerate of religious beliefs and many forms of cultural expression.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-3.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-4">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's haircut cap</h3>
+                                <p>
+                                    The cap haircut appeared in the 60s of the last century, and now it is gaining momentum again
+                                    and will be one of the most popular this season. The key element of this form is long and expressive bangs.
+                                    The best option is high and thick. For most hats, the bangs are taken directly from the top of the head and go to the eyebrows.
+                                    Bangs to the middle of the forehead have also become fashionable in modern versions.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-4.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-5">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's square haircut</h3>
+                                <p>
+                                    Kare can be of different lengths, textures, colors, be strict or feminine, flirtatious or elegant, everything is possible.
+                                    Surely, scrolling through Instagram, you saw one of your favorite bloggers with a bob or watching a
+                                    fashion show, or just walking around the city. Even almost all Hollywood celebrities cut their hair
+                                    and wear their own version of the iconic bob at some point. Today we're going to find out what's so
+                                    special about this simple haircut that feels timeless and classic. And as the bob is constantly being
+                                    updated to offer a variety of cut lengths and textures, we'll also
+                                    discuss bob fashion trends for 2023 along with classic types that have stood the test of time.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-5.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-6">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's haircut lisenka</h3>
+                                <p>
+                                    Ladder haircut is very popular with the beautiful half of humanity. This is because this hairstyle is unpretentious and does not need daily styling.
+                                    Moreover, it can be done on both medium and long hair. Also, this hairstyle looks equally advantageous on curly hair and on straight ones.
+                                    From this article you will learn what the modern version of the haircut looks like, and to whom it suits.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-6.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-7">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's haircut ladder</h3>
+                                <p>
+                                    Someone thinks that haircuts ladder and cascade This is the same.
+                                    Or that these are either two names of the same model, or a common name and more scientific.
+                                    But still it's not like that - differences between them are significant, and we will consider them
+                                    in this article. These two haircuts are quite versatile, suitable for both long and short hair, for
+                                    different face shapes, for long or curly curls. These hairstyles are well suited for those who do not
+                                    want to shorten the length, but want to change the external image. Even if these models have several
+                                    similar features, they are still different haircuts. They have differences, and the technique of execution
+                                    also has its own characteristics and nuances.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-7.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-8">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's torn haircut</h3>
+                                <p>
+                                    For owners of short hair, a torn haircut or torn haircut provides a unique opportunity for
+                                    experimentation. You can create a creative image with the help of geometric or asymmetrical
+                                    cuts, long bangs, tousled short nape. A torn haircut is universal and suitable for different
+                                    types of hair. Unlike the classic cascade or ladder, it does not have a smooth transition between
+                                    the strands, and the hair is cut not along an oblique line, but in a straight line, with a perfectly
+                                    even cut. The most advantageous version of rvanka is done on short hair.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-8.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-9">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Women's haircut straight cut</h3>
+                                <p>
+                                    This hairdo is a mix between the layered cut and the shredded cut. It has choppy
+                                    layers with disconnected ends of different lengths. An ideal choice for a sassy and modern look,
+                                    the Shag haircut looks equally stunning on both thin and thick hair. To add some flair to the Shag,
+                                    you can style it with curtain bangs or frayed fringe. Great haircut for flaunting your long straight hair.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2 haircut-photo">
+                                <img src="~/img/specials-9.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Gifts Section -->
+<section id="events" class="events">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Get extra <span>GIFTS</span> in our hairdresser's shop</h2>
+        </div>
+
+        <div class="events-slider swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="row event-item">
+                        <div class="col-lg-6">
+                            <img src="~/img/event-birthday.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0 content">
+                            <div class="price">
+                                <p><span>FREE</span></p>
+                            </div>
+                            <p class="fst-italic">
+                                Get absolutely free drinks!
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i> Coffee.</li>
+                                <li><i class="bi bi-check-circle"></i> Cappuccino.</li>
+                                <li><i class="bi bi-check-circle"></i> Tea.</li>
+                            </ul>
+                            <p>
+                                As comfortable as possible!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="row event-item">
+                        <div class="col-lg-6">
+                            <img src="~/img/event-private.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0 content">
+                            <div class="price">
+                                <p><span>FREE</span></p>
+                            </div>
+                            <p class="fst-italic">
+                                Get absolutely free  haircut if you are a model! you pay only for materials!
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i> Haircut.</li>
+                                <li><i class="bi bi-check-circle"></i> Hair coloring.</li>
+                                <li><i class="bi bi-check-circle"></i> Toning.</li>
+                                <li><i class="bi bi-check-circle"></i> Botox.</li>
+                                <li><i class="bi bi-check-circle"></i> Keratin.</li>
+                            </ul>
+                            <p>
+                                You pay for materials, but you look 100%!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="row event-item">
+                        <div class="col-lg-6 sertificate">
+                            <img src="~/img/event-custom.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0 content">
+                            <h3>Discount certificate</h3>
+                            <div class="price">
+                                <p><span>20% OFF</span></p>
+                            </div>
+                            <p class="fst-italic">
+                                Get a discount haircut certificate if you invite a friend.
+                                Get a discount if you buy the certificate .
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i> 20% discount on a classic haircut.</li>
+                                <li><i class="bi bi-check-circle"></i> 20% discount on a toning.</li>
+                                <li><i class="bi bi-check-circle"></i> 20% discount on a botox.</li>
+                            </ul>
+                            
+                            <h3>OFF IF REGISTER</h3>
+                            <div class="price">
+                                <p><span>20% OFF</span></p>
+                            </div>
+                            <p class="fst-italic">
+                                                            Register in our site and gey the off.
+                                </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Book A Table Section Haircut -->
+<section id="book-a-table" class="book-a-table">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Get a <span>Haircut</span></h2>
+            <p>Fill out the form and get a reservation for a haircut in 5 minutes!</p>
+        </div>
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @using (Html.BeginForm("BookATable", "Home", FormMethod.Post, new { @class = "php-email-form" }))
+        {
+            <div class="row">
+                <div class="col-lg-4 col-md-6 form-group">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Your Name" })
+                    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Your Email" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Your Phone" })
+                    @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    @Html.TextBoxFor(m => m.Date, new { @class = "form-control", placeholder = "Date" })
+                    @Html.ValidationMessageFor(m => m.Date, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    @Html.TextBoxFor(m => m.Time, new { @class = "form-control", placeholder = "Time"})
+                    @Html.ValidationMessageFor(m => m.Time, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    @Html.TextBoxFor(m => m.NumberOfPeople, new { @class = "form-control", placeholder = "# of people" })
+                    @Html.ValidationMessageFor(m => m.NumberOfPeople, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                @Html.TextAreaFor(m => m.Message, new { @class = "form-control", rows = "5", placeholder = "Message" })
+            </div>
+            <div class="mb-3">
+                <div class="message" style="display: none;">
+                    Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit">Reserve!</button>
+            </div>
+        }
+        <script>
+            if ("@ViewBag.ShowMessage" == "True") {
+                document.querySelector(".message").style.display = "block";
+                let formControls = document.querySelectorAll(".form-control");
+                formControls.forEach(function (control) {
+                    control.value = ""; 
+                });
+            }else{
+                document.querySelector(".message").style.display = "none";
+            }
+        </script>
+
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="container-fluid">
+
+        <div class="section-title">
+            <h2>Some photos from <span>Our hairdresser's shop</span></h2>
+            <p>A selection of the best photos of our hairdresser's shops.</p>
+        </div>
+
+        <div class="row g-0">
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="~/img/gallery/gallery-1.jpg" class="gallery-lightbox">
+                        <img src="~/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="~/img/gallery/gallery-2.jpg" class="gallery-lightbox">
+                        <img src="~/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="~/img/gallery/gallery-3.jpg" class="gallery-lightbox">
+                        <img src="~/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="~/img/gallery/gallery-4.jpg" class="gallery-lightbox">
+                        <img src="~/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="~/img/gallery/gallery-5.jpg" class="gallery-lightbox">
+                        <img src="~/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="~/img/gallery/gallery-6.jpg" class="gallery-lightbox">
+                        <img src="~/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="~/img/gallery/gallery-7.jpg" class="gallery-lightbox">
+                        <img src="~/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="~/img/gallery/gallery-8.jpg" class="gallery-lightbox">
+                        <img src="~/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Chefs Section -->
+<section id="chefs" class="chefs">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our Proffesional <span>Masters</span></h2>
+            <p class="textBarbers">We present you our team of the best professionals!</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><img src="~/img/chefs/chefs-1.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>Sofia Mohyla</h4>
+                        <span>Master of women's haircuts and coloring</span>
+                        <div class="social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><img src="~/img/chefs/chefs-2.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>Iryna Vdovych</h4>
+                        <span>Master of lamination, keratinization and botox</span>
+                        <div class="social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><img src="~/img/chefs/chefs-3.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>Zoriana Kovalchuk</h4>
+                        <span>Master of hairstyles, haircuts, toning and keratinization</span>
+                        <div class="social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container position-relative">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="~/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                        <h3>Sofia Mohyla</h3>
+                        <h4>Founder</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Being a professional is the greatest happiness for a master.
+                            <br>
+                            And when your institution is the best - there is no greater praise.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="~/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                        <h3>Kateryna Bilyk</h3>
+                        <h4>Designer</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            All of us first of all pay attention to the appearance, and then to the quality.
+                            <br>
+                            My task is to provide an opportunity to spend time in comfort with pleasure.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="~/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                        <h3>Mohyla Andriy</h3>
+                        <h4>Co-owner</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            I want to give the opportunity to feel like a real woman to everyone who wants it.
+                            <br>
+                            And in our hair salon you can afford it.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="~/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                        <h3>Solomia Yarmoliuk</h3>
+                        <h4>Tenant</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            I am happy to be useful in such a matter, but I will not refuse to sit and get high.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="~/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                        <h3>Yaroslav Fedor</h3>
+                        <h4>Idea owner</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            I want to give every woman the opportunity to feel like a goddess.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2><span>Contact</span> Us</h2>
+            <p>Finding us is easier than it seems!</p>
+        </div>
+    </div>
+    <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px" ;
+                src="https://maps.google.com/maps?q=львів салон венера&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+
+
+</section>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/sof_curs.props" />
+</Project>

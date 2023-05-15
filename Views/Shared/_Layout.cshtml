@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Venus</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Library CSS Files -->
+    
+    <link rel="stylesheet" href="~/lib/animate.css/animate.css" />
+    <link rel="stylesheet" href="~/lib/boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/bootstrap-icons.css" />
+    
+    
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Top Bar -->
+    <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+            <i class="bi bi-phone d-flex align-items-center"><span>+380 68 053 87 00</span></i>
+            <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 09:00 AM - 21:00 PM</span></i>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <div class="logo me-auto">
+                <a href="index.html"><img src="~/img/logo.png" alt="logoHeader" class="img-fluid"></a>
+                <!-- <h1><a href="index.html">Man Club</a></h1> -->
+            </div>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#specials">Haircuts</a></li>
+                    <li><a class="nav-link scrollto" href="#events">Gifts</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link scrollto" href="#chefs">Masters</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+            <a href="#book-a-table" class="book-a-table-btn scrollto">Get a haircut!</a>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background-image: url(../img/slide/slide-1.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Venus</h2>
+                                <p class="animate__animated animate__fadeInUp">Our hair salon is built on style and professionalism. Each of our hair salons is unique. You will find consistent quality in every location.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Haircuts</a>
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">
+                                        Get a
+                                        haircut!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" style="background-image: url(../img/slide/slide-2.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Venus</h2>
+                                <p class="animate__animated animate__fadeInUp">We offer professional hair care, the best materials, selection for your hair type and impressive results.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">
+                                        Get a
+                                        haircut!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" style="background-image: url(../img/slide/slide-3.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Venus</h2>
+                                <p class="animate__animated animate__fadeInUp">
+                                    Our formulas for hair coloring and toning, styling and styling products have been developed
+                                    to the exacting standards of our own hairdressers.
+                                </p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">
+                                        Get a
+                                        haircut
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    
+    <main role="main" id="main">
+        @RenderBody()
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <h3>Venus </h3>
+            <p>We do our best for our clients!</p>
+            <div class="social-links">
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <a href="index.html"><img src="~/img/logo.png" alt="logoFooter" class="logoFooter"></a>.
+                All Rights Reserved. 2023
+            </div>
+
+            <div class="credits">
+                Designed by <a href="https://github.com/SofiiaMohyla/sof_curs">MohylaSofia</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Library JS Files -->
+
+    <script src="~/lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+
+
+    
+<!--Main JS File-->
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
