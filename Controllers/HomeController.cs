@@ -37,6 +37,7 @@ namespace sof_curs.Controllers
 
         public IActionResult SignUp()
         {
+            ViewBag.DeleteFooter = "True";
             return View("~/Views/SignUp/SignUp.cshtml");
         }
 

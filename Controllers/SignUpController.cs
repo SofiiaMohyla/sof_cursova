@@ -19,6 +19,8 @@ namespace sof_curs.Controllers
         [HttpPost]
         public IActionResult SignUp(UserViewModel model)
         {
+            ViewBag.DeleteFooter = "True";
+            
             if (ModelState.IsValid)
             {
                 // Check if user with the same email already exists
@@ -34,7 +36,7 @@ namespace sof_curs.Controllers
                 
                 _context.SaveChanges();
 
-                return View("~/Views/Home/Index.cshtml");
+                return View("~/Views/SignUp/Confirm.cshtml");
             }
 
             return View(model);

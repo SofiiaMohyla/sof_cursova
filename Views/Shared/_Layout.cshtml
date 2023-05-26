@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 
     <!-- Library CSS Files -->
-    
     <link rel="stylesheet" href="~/lib/animate.css/animate.css" />
     <link rel="stylesheet" href="~/lib/boxicons/css/boxicons.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap-icons/bootstrap-icons.css" />
-    
-    
 
     <!-- Main CSS File -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -25,7 +22,7 @@
     <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
             <i class="bi bi-phone d-flex align-items-center"><span>+380 68 053 87 00</span></i>
-            <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-San: 09:00 AM - 21:00 PM</span></i>
+            <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 09:00 AM - 21:00 PM</span></i>
         </div>
     </section>
 
@@ -34,7 +31,8 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
             <div class="logo me-auto">
-                <a href="#"><img src="https://expotobi.com/media/images/1e98115f85d265ee9f40976e38fffd91.png" alt="logoHeader" class="img-fluid"/></a>
+                <a href="#"><img src="~/img/logo.png" alt="logoHeader" class="img-fluid"></a>
+                <!-- <h1><a href="index.html">Man Club</a></h1> -->
             </div>
 
             <nav id="navbar" class="navbar order-last order-lg-0">
@@ -51,7 +49,7 @@
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
 
-            <a href="#book-a-table" class="book-a-table-btn scrollto">Get a haircut!</a>
+            <a id="book-a-table" href="#book-a-table" class="book-a-table-btn scrollto">Get a haircut!</a>
 
         </div>
     </header>
@@ -146,7 +144,7 @@
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
             </div>
             <div class="copyright">
-                &copy; Copyright <a href="#"><img src="https://expotobi.com/media/images/1e98115f85d265ee9f40976e38fffd91.png" alt="logoFooter" class="logoFooter"></a>.
+                &copy; Copyright <a href="index.html"><img src="~/img/logo.png" alt="logoFooter" class="logoFooter"></a>.
                 All Rights Reserved. 2023
             </div>
 
@@ -163,16 +161,20 @@
     <!-- Library JS Files -->
 
     <script src="~/lib/isotope-layout/isotope.pkgd.min.js"></script>
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     
-  
-
-
-    
-<!--Main JS File-->
+    <!--Main JS File-->
     <script src="~/js/site.js" asp-append-version="true"></script>
     
+    @if (ViewBag.DeleteFooter != null)
+    {
+        <script>
+            document.getElementById("footer").remove();
+        </script>
+    }
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
